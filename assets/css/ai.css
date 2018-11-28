@@ -51,19 +51,35 @@ figure img {
 
 .carGrid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 30% 60%;
   grid-template-rows: auto;
   grid-template-areas: "carImage carText";
   grid-column-gap: 10px;
 }
 
-figure.selfCarImg {
+.selfCarImg {
   grid-area: carImage;
 }
 
-div.selfCarTxt {
+.selfCarTxt {
   display: block;
   grid-area: carText;
   overflow: scroll;
   padding-top: 10px;
+}
+
+.ocrGrid {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-template-rows: auto;
+  grid-template-areas: "ocrImage ocrText";
+  grid-column-gap: 10px;
+}
+
+.ocrImg {
+  grid-area: ocrImage;
+}
+
+.ocrTxt {
+  grid-area: ocrText;
 }
