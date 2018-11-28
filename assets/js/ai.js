@@ -10,6 +10,10 @@ function ocrBootIn() {
   var ocrInfo = document.getElementById("ocrTxt");
 
   ocrInfo.innerHTML = ocrText;
+  ocrInfo.style.paddingTop = "3%";
+  ocrInfo.style.paddingLeft = "5%";
+  ocrInfo.style.paddingRight = "5%";
+
   gridContainer.style.gridTemplateRows = '"auto auto"';
   gridContainer.style.gridTemplateAreas = '"sImage oImage tImage" "oText oText oText"';
 
