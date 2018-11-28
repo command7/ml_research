@@ -49,15 +49,15 @@ figure img {
   height: 100%;
 }
 
-.ImageGrid {
+#ImageGrid {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: auto;
-  grid-template-areas: "car ocr tbd";
+  grid-template-areas: "car ocr tbda";
   grid-column-gap: 5px;
 }
 
-.selfCarImg {
+#selfCarImg {
   grid-area: car;
 }
 
@@ -76,10 +76,12 @@ figure img {
   grid-column-gap: 10px;
 } */
 
-.ocrImg {
+#ocrImg {
   grid-area: ocr;
 }
-
+#tbd {
+  grid-area: tbda;
+}
 /* .ocrTxt {
   grid-area: ocrText;
 } */
