@@ -44,6 +44,11 @@ function carBootIn() {
   var sInfo = document.getElementById("selfCarTxt");
 
   sInfo.innerHTML = sText;
+  sInfo.style.paddingTop = "5%";
+  sInfo.style.paddingRight = "20%";
+  carContainer.style.paddingLeft = "5%";
+  ocrContainer.style.paddingLeft = "5%";
+
   gridContainer.style.gridTemplateRows = '"auto auto"';
   gridContainer.style.gridTemplateAreas = '"sImage sText sText" "oImage . tImage"';
 
