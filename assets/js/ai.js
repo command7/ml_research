@@ -10,9 +10,9 @@ function ocrBootIn() {
   var ocrInfo = document.getElementById("ocrTxt");
 
   ocrInfo.innerHTML = ocrText;
-  ocrInfo.style.paddingTop = "3%";
-  ocrInfo.style.paddingLeft = "5%";
-  ocrInfo.style.paddingRight = "5%";
+  ocrInfo.style.padding = "30px 100px";
+  // ocrInfo.style.paddingLeft = "5%";
+  // ocrInfo.style.paddingRight = "5%";
 
   gridContainer.style.gridTemplateRows = '"auto auto"';
   gridContainer.style.gridTemplateAreas = '"sImage oImage tImage" "oText oText oText"';
@@ -21,23 +21,6 @@ function ocrBootIn() {
   carContainer.style.gridArea = "sImage";
   tbdContainer.style.gridArea = "tImage";
   ocrInfo.style.gridArea = "oText";
-}
-
-function bootOut() {
-  var gridContainer = document.getElementById("ImageGrid");
-  var carContainer = document.getElementById("selfCarImg");
-  var ocrContainer = document.getElementById("ocrImg");
-  var tbdContainer = document.getElementById("tbd");
-  var ocrInfo = document.getElementById("ocrTxt")
-  var sInfo = document.getElementById("selfCarTxt")
-  ocrInfo.innerHTML = "";
-  sInfo.innerHTML = "";
-  gridContainer.style.gridTemplateColumns = '"33% 33% 33%"';
-  gridContainer.style.gridTemplateRows = '"auto"';
-  gridContainer.style.gridTemplateAreas = '"car ocr tbda"';
-  carContainer.style.gridArea = "car";
-  ocrContainer.style.gridArea = "ocr";
-  tbdContainer.style.gridArea = "tbda";
 }
 
 function carBootIn() {
@@ -60,4 +43,21 @@ function carBootIn() {
   carContainer.style.gridArea = "sImage";
   tbdContainer.style.gridArea = "tImage";
   sInfo.style.gridArea = "sText";
+}
+
+function bootOut() {
+  var gridContainer = document.getElementById("ImageGrid");
+  var carContainer = document.getElementById("selfCarImg");
+  var ocrContainer = document.getElementById("ocrImg");
+  var tbdContainer = document.getElementById("tbd");
+  var ocrInfo = document.getElementById("ocrTxt")
+  var sInfo = document.getElementById("selfCarTxt")
+  ocrInfo.innerHTML = "";
+  sInfo.innerHTML = "";
+  gridContainer.style.gridTemplateColumns = '"33% 33% 33%"';
+  gridContainer.style.gridTemplateRows = '"auto"';
+  gridContainer.style.gridTemplateAreas = '"car ocr tbda"';
+  carContainer.style.gridArea = "car";
+  ocrContainer.style.gridArea = "ocr";
+  tbdContainer.style.gridArea = "tbda";
 }
