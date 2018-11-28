@@ -11,8 +11,7 @@ function ocrBootIn() {
 
   ocrInfo.innerHTML = ocrText;
   ocrInfo.style.padding = "30px 100px";
-  // ocrInfo.style.paddingLeft = "5%";
-  // ocrInfo.style.paddingRight = "5%";
+
 
   gridContainer.style.gridTemplateRows = '"auto auto"';
   gridContainer.style.gridTemplateAreas = '"sImage oImage tImage" "oText oText oText"';
