@@ -49,37 +49,37 @@ figure img {
   height: 100%;
 }
 
-.carGrid {
+.ImageGrid {
   display: grid;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 30% 30% 30%;
   grid-template-rows: auto;
-  grid-template-areas: "carImage carText";
-  grid-column-gap: 10px;
+  grid-template-areas: "car ocr tbd";
+  grid-column-gap: 5px;
 }
 
 .selfCarImg {
-  grid-area: carImage;
+  grid-area: car;
 }
 
-.selfCarTxt {
+/* .selfCarTxt {
   display: block;
   grid-area: carText;
   overflow: scroll;
   padding-top: 10px;
-}
+} */
 
-.ocrGrid {
+/* .ocrGrid {
   display: grid;
   grid-template-columns: 30% 60%;
   grid-template-rows: auto;
   grid-template-areas: "ocrImage ocrText";
   grid-column-gap: 10px;
-}
+} */
 
 .ocrImg {
-  grid-area: ocrImage;
+  grid-area: ocr;
 }
 
-.ocrTxt {
+/* .ocrTxt {
   grid-area: ocrText;
-}
+} */
