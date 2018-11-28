@@ -50,8 +50,9 @@ figure img {
 }
 
 #ImageGrid {
+  width: 100vw;
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
   grid-template-areas: "car ocr tbda";
   grid-column-gap: 5px;
