@@ -15,8 +15,11 @@ h1 {
   text-align: center;
 }
 h2  {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 50px;
+  background-color: #1C72FF;
 }
 
 h3  {
@@ -53,15 +56,22 @@ figure {
   width: 350px;
   height: 300px;
   /* position: absoluter; */
-
 }
 
 #ocI {
     border: 5px outset white;
 }
 
+#ocI:hover {
+  border: 5px solid black;
+}
+
 #scI {
     border: 5px outset white;
+}
+
+#scI:hover {
+  border: 5px solid black;
 }
 
 figure img {
