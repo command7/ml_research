@@ -85,7 +85,7 @@ figure img {
 
 #ImageGrid {
   border: 5px solid green;
-  background-color: #FF530D;
+  background-color: #AD1AE8;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
