@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="assets/css/ai.css">
   </head>
   <body>
+    <header>
+      <h1>Artificial Intelligence</h1>
+    </header>
     <nav>
       <a href="index.html">Homepage</a>
       <a class="currentNav" href="#">Artificial Intelligence</a>
@@ -20,12 +23,12 @@
       </div>
       <div id="apps">
         <h2>Applications of Artificial Intelligence</h2>
-        Place your mouse over images for details.
+        Click on images for a detailed description.
       </div>
       <div id="ImageGrid">
         <div id="selfCarImg" onclick="carBootIn()" ondblclick="bootOut()">
           <h3>Self Driving Cars</h3>
-          <figure>
+          <figure id="scI">
             <img src="assets/images/autocar.jpeg" alt="Image of an autonomous car">
           </figure>
         </div>
@@ -35,7 +38,7 @@
 
         <div id="ocrImg" onclick="ocrBootIn()" ondblclick="bootOut()">
           <h3>Optimal Character Recognition</h3>
-          <figure>
+          <figure id="ocI">
             <img src="assets/images/ocr.png" alt="Image of an autonomous car">
           </figure>
         </div>

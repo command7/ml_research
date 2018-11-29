@@ -8,7 +8,14 @@ body {
   font-size: 20px;
   width: 100vw;
 }
-
+header {
+  /* border: 5px solid red; */
+}
+h1 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+}
 h2  {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -48,7 +55,15 @@ figure {
   width: 350px;
   height: 300px;
   /* position: absoluter; */
-  border: 5px outset black;
+
+}
+
+#ocI {
+    border: 5px outset white;
+}
+
+#scI {
+    border: 5px outset white;
 }
 
 figure img {
@@ -68,6 +83,7 @@ figure img {
   grid-template-rows: auto;
   grid-template-areas: "car ocr tbda";
   grid-column-gap: 5px;
+  grid-row-gap: 20px;
   padding: 20px 50px;
 }
 

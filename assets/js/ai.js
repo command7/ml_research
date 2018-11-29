@@ -9,7 +9,7 @@ function ocrBootIn() {
   var tbdContainer = document.getElementById("tbd");
   var ocrInfo = document.getElementById("ocrTxt");
   var sInfo = document.getElementById("selfCarTxt");
-  
+
   sInfo.innerHTML = "";
   sInfo.style.backgroundColor = "#FF530D";
 
@@ -41,11 +41,12 @@ function carBootIn() {
 
   sInfo.innerHTML = sText;
   sInfo.style.padding = "30px 100px";
+
   carContainer.style.paddingLeft = "5%";
   ocrContainer.style.paddingLeft = "5%";
 
   gridContainer.style.gridTemplateRows = '"auto auto"';
-  gridContainer.style.gridTemplateAreas = '"sImage sText sText" "oImage . tImage"';
+  gridContainer.style.gridTemplateAreas = '"sImage oImage tImage" "sText sText sText"';
 
   ocrContainer.style.gridArea = "oImage";
   carContainer.style.gridArea = "sImage";
