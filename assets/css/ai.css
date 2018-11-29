@@ -75,6 +75,11 @@ a.currentNav {
   color: yellow;
 }
 
+a:hover {
+  color: red;
+  font-size: 22px;
+}
+
 figure {
   display: inline-block;
   width: 350px;

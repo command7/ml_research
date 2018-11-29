@@ -47,3 +47,7 @@ nav a {
 a.currentNav {
   color: yellow;
 }
+a:hover {
+  color: red;
+  font-size: 22px;
+}

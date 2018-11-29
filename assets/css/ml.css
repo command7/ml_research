@@ -75,6 +75,11 @@ a.currentNav {
   color: yellow;
 }
 
+a:hover {
+  color: red;
+  font-size: 22px;
+}
+
 .typesContainer {
   padding: 40px 50px;
   display: grid;
