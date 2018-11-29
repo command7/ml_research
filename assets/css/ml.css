@@ -6,6 +6,7 @@
 body {
   line-height: 30px;
   font-size: 20px;
+  /* color:white; */
 }
 
 .why {
@@ -25,10 +26,24 @@ header {
   background: url("../images/mlHeader.jpg") ;
   background-size: cover;
 }
-/* main {
-  background: url("../images/bla.jpg");
-  background-size: cover;
-} */
+main {
+  position: relative;
+
+}
+
+#bgImg {
+  position: absolute;
+ z-index: -1;
+ width: 100%;
+ height: 100%;
+ background-image: url('../images/mlbg.jpg');
+ background-size: cover;
+ opacity: 0.4;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+}
 h1 {
   padding-top: 70px;
   padding-bottom: 70px;
