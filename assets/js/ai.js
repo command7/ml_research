@@ -8,6 +8,10 @@ function ocrBootIn() {
   var ocrContainer = document.getElementById("ocrImg");
   var tbdContainer = document.getElementById("tbd");
   var ocrInfo = document.getElementById("ocrTxt");
+  var sInfo = document.getElementById("selfCarTxt");
+  
+  sInfo.innerHTML = "";
+  sInfo.style.backgroundColor = "#FF530D";
 
   ocrInfo.innerHTML = ocrText;
   ocrInfo.style.padding = "30px 100px";
@@ -30,6 +34,10 @@ function carBootIn() {
   var ocrContainer = document.getElementById("ocrImg");
   var tbdContainer = document.getElementById("tbd");
   var sInfo = document.getElementById("selfCarTxt");
+  var ocrInfo = document.getElementById("ocrTxt");
+
+  ocrInfo.innerHTML = "";
+  ocrInfo.style.backgroundColor = "#FF530D";
 
   sInfo.innerHTML = sText;
   sInfo.style.padding = "30px 100px";
@@ -53,8 +61,8 @@ function bootOut() {
   var carContainer = document.getElementById("selfCarImg");
   var ocrContainer = document.getElementById("ocrImg");
   var tbdContainer = document.getElementById("tbd");
-  var ocrInfo = document.getElementById("ocrTxt")
-  var sInfo = document.getElementById("selfCarTxt")
+  var ocrInfo = document.getElementById("ocrTxt");
+  var sInfo = document.getElementById("selfCarTxt");
   ocrInfo.innerHTML = "";
   sInfo.innerHTML = "";
   ocrInfo.style.backgroundColor = "#FF530D";
