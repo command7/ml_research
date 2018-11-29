@@ -7,7 +7,13 @@ body {
   line-height: 30px;
   font-size: 20px;
 }
+
+.why {
+    padding-left: 50px;
+}
+
 h2  {
+  background-color: #1C72FF;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
