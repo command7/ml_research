@@ -20,6 +20,8 @@ function ocrBootIn() {
   carContainer.style.gridArea = "sImage";
   tbdContainer.style.gridArea = "tImage";
   ocrInfo.style.gridArea = "oText";
+  ocrInfo.style.color = "white";
+  ocrInfo.style.backgroundColor = "black";
 }
 
 function carBootIn() {
@@ -30,8 +32,7 @@ function carBootIn() {
   var sInfo = document.getElementById("selfCarTxt");
 
   sInfo.innerHTML = sText;
-  sInfo.style.paddingTop = "5%";
-  sInfo.style.paddingRight = "20%";
+  sInfo.style.padding = "30px 100px";
   carContainer.style.paddingLeft = "5%";
   ocrContainer.style.paddingLeft = "5%";
 
@@ -42,6 +43,9 @@ function carBootIn() {
   carContainer.style.gridArea = "sImage";
   tbdContainer.style.gridArea = "tImage";
   sInfo.style.gridArea = "sText";
+  sInfo.style.color = "white";
+  sInfo.style.backgroundColor = "black";
+  sInfo.style.paddingLeft = "20px";
 }
 
 function bootOut() {
@@ -53,10 +57,14 @@ function bootOut() {
   var sInfo = document.getElementById("selfCarTxt")
   ocrInfo.innerHTML = "";
   sInfo.innerHTML = "";
-  gridContainer.style.gridTemplateColumns = '"33% 33% 33%"';
-  gridContainer.style.gridTemplateRows = '"auto"';
-  gridContainer.style.gridTemplateAreas = '"car ocr tbda"';
+  ocrInfo.style.backgroundColor = "#FF530D";
+  sInfo.style.backgroundColor = "#FF530D";
+  //gridContainer.style.gridTemplateColumns = '"33% 33% 33%"';
+  gridContainer.style.gridTemplateRows = '"auto auto"';
+  gridContainer.style.gridTemplateAreas = '"car ocr tbda" "carText ocrText ."';
   carContainer.style.gridArea = "car";
   ocrContainer.style.gridArea = "ocr";
   tbdContainer.style.gridArea = "tbda";
+  ocrInfo.style.gridArea = "ocrText";
+  sInfo.style.gridArea = "carText";
 }
