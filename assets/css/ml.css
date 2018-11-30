@@ -18,7 +18,6 @@ h2  {
   background-color: #4507E8;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 10px;
   color: white;
 }
 h3 {
@@ -35,7 +34,7 @@ main {
 #bgImg {
  position: absolute;
  z-index: -1;
- width: 100%;
+ /* width: 100%; */
  height: 100%;
  background-image: url('../images/mlbg.jpg');
  background-size: cover;
