@@ -11,10 +11,16 @@ function ocrBootIn() {
   var sInfo = document.getElementById("selfCarTxt");
 
   sInfo.innerHTML = "";
+  sInfo.style.backgroundColor = "transparent";
+  sInfo.style.border = "0";
   // sInfo.style.backgroundColor = "#AD1AE8";
 
   ocrInfo.innerHTML = ocrText;
+  ocrInfo.style.backgroundColor = "#AC17FF";
   ocrInfo.style.padding = "30px 100px";
+  ocrInfo.style.paddingRight = "120px";
+  ocrInfo.style.border = '"5px solid #AC17FF"';
+  ocrInfo.style.borderRadius = "10px";
 
 
   gridContainer.style.gridTemplateRows = '"auto auto auto"';
@@ -38,10 +44,15 @@ function carBootIn() {
   var ocrInfo = document.getElementById("ocrTxt");
 
   ocrInfo.innerHTML = "";
+  ocrInfo.style.backgroundColor = "transparent";
+  ocrInfo.style.border = "0";
   // ocrInfo.style.backgroundColor = "#AD1AE8";
 
   sInfo.innerHTML = sText;
+  sInfo.style.backgroundColor = "#AC17FF";
   sInfo.style.padding = "30px 100px";
+  sInfo.style.border = '"5px solid #AC17FF"';
+  sInfo.style.borderRadius = "10px";
 
   carContainer.style.paddingLeft = "5%";
   ocrContainer.style.paddingLeft = "5%";
@@ -68,8 +79,8 @@ function bootOut() {
   var sInfo = document.getElementById("selfCarTxt");
   ocrInfo.innerHTML = "";
   sInfo.innerHTML = "";
-  ocrInfo.style.backgroundColor = "#FF530D";
-  sInfo.style.backgroundColor = "#FF530D";
+  ocrInfo.style.backgroundColor = "transparent";
+  sInfo.style.backgroundColor = "transparent";
   //gridContainer.style.gridTemplateColumns = '"33% 33% 33%"';
   gridContainer.style.gridTemplateRows = '"auto auto"';
   gridContainer.style.gridTemplateAreas = '"car ocr tbda" "carText ocrText ."';

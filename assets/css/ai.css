@@ -89,7 +89,7 @@ figure {
 }
 
 #ocI {
-    border: 5px outset white;
+    border: 5px solid #4507E8;
 }
 
 #ocI:hover {
@@ -97,7 +97,7 @@ figure {
 }
 
 #scI {
-    border: 5px outset white;
+    border: 5px solid #4507E8;
 }
 
 #scI:hover {
