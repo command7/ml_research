@@ -61,6 +61,21 @@ h1 {
 }
 
 main {
-  margin: 50px;
+  position: relative;
+  padding: 50px;
   line-height: 40px;
+}
+
+#bgImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/resourcebg.jpg');
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
