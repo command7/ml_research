@@ -197,12 +197,15 @@ a.currentNav {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+/* CSS for a screen size of less than 970px */
 @media screen and (max-width: 970px) {
   nav {
     height: auto;
   }
 }
 
+/* CSS for a screen size of less than 700px */
 @media screen and (max-width: 700px) {
   .typesContainer {
     padding: 40px 50px;

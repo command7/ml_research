@@ -96,11 +96,14 @@ main {
   margin: 20px auto;
 }
 
+/* CSS for a screen size of less than 680px */
 @media screen and (max-width: 680px) {
   nav{
     height: auto;
   }
 }
+
+/* CSS for a screen size of less than 1160px */
 @media screen and (max-width: 1160px) {
   nav {
     height: auto;

@@ -162,6 +162,8 @@ figure img {
   padding-right: 50px;
   padding-left: 50px;
 }
+
+/* CSS for a screen size of less than 1160px */
 @media screen and (max-width: 1160px) {
   #ImageGrid {
     display: grid;
@@ -182,6 +184,7 @@ figure img {
   }
 }
 
+/* CSS for a screen size of less than 880px */
 @media screen and (max-width: 880px) {
   nav {
     height: auto;

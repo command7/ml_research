@@ -87,6 +87,8 @@ ol, ul {
   bottom: 0;
   right: 0;
 }
+
+/* CSS for a screen size of less than 970px */
 @media screen and (max-width: 970px) {
   nav {
     height: auto;
