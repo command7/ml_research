@@ -29,9 +29,24 @@ a.currentNav {
   color: yellow;
 }
 
-a:hover {
+#indexLink:hover {
   color: red;
-  font-size: 21px;
+
+}
+
+#mlLink:hover {
+  color: red;
+
+}
+
+#aiLink:hover {
+  color: red;
+
+}
+
+#resourceLink:hover {
+  color: red;
+
 }
 
 header {

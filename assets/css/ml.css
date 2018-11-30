@@ -22,6 +22,9 @@ h2  {
 }
 h3 {
   text-align: center;
+  background-color: #07CBFF;
+  border: 5px solid #07CBFF;
+  border-radius: 5px;
 }
 header {
   background: url("../images/mlHeader.jpg") ;
@@ -74,10 +77,26 @@ a.currentNav {
   color: yellow;
 }
 
-a:hover {
+#indexLink:hover {
   color: red;
-  font-size: 21px;
+
 }
+
+#mlLink:hover {
+  color: red;
+
+}
+
+#aiLink:hover {
+  color: red;
+
+}
+
+#resourceLink:hover {
+  color: red;
+
+}
+
 
 .typesContainer {
   padding: 40px 50px;
@@ -165,4 +184,14 @@ a:hover {
   background-color: #0769E8;
   border: 5px solid #0769E8;
   border-radius: 10px;
+}
+
+#vpaText {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#cpText {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
