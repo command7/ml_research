@@ -149,4 +149,21 @@ a:hover {
 
 #applications {
   padding: 40px 50px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  grid-row-gap: 20px;
+  grid-template-areas: "app1" "app2";
+}
+#vpa {
+  grid-area: app1;
+  background-color: #0769E8;
+  border: 5px solid #0769E8;
+  border-radius: 10px;
+}
+#cp {
+  grid-area: app2;
+  background-color: #0769E8;
+  border: 5px solid #0769E8;
+  border-radius: 10px;
 }
