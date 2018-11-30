@@ -6,7 +6,6 @@ function ocrBootIn() {
   var gridContainer = document.getElementById("ImageGrid");
   var carContainer = document.getElementById("selfCarImg");
   var ocrContainer = document.getElementById("ocrImg");
-  var tbdContainer = document.getElementById("tbd");
   var ocrInfo = document.getElementById("ocrTxt");
   var sInfo = document.getElementById("selfCarTxt");
 
@@ -24,22 +23,18 @@ function ocrBootIn() {
 
 
   gridContainer.style.gridTemplateRows = '"auto auto auto"';
-  gridContainer.style.gridTemplateAreas = '"sImage oImage tImage" "oText oText oText" "sText tText ."';
+  gridContainer.style.gridTemplateAreas = '"sImage . oImage" "oText oText oText" "sText sText sText"';
 
   ocrContainer.style.gridArea = "oImage";
   carContainer.style.gridArea = "sImage";
-  tbdContainer.style.gridArea = "tImage";
   sInfo.style.gridArea = "sText";
   ocrInfo.style.gridArea = "oText";
-  // ocrInfo.style.color = "white";
-  // ocrInfo.style.backgroundColor = "black";
 }
 
 function carBootIn() {
   var gridContainer = document.getElementById("ImageGrid");
   var carContainer = document.getElementById("selfCarImg");
   var ocrContainer = document.getElementById("ocrImg");
-  var tbdContainer = document.getElementById("tbd");
   var sInfo = document.getElementById("selfCarTxt");
   var ocrInfo = document.getElementById("ocrTxt");
 
@@ -58,11 +53,10 @@ function carBootIn() {
   ocrContainer.style.paddingLeft = "5%";
 
   gridContainer.style.gridTemplateRows = '"auto auto auto"';
-  gridContainer.style.gridTemplateAreas = '"sImage oImage tImage" "sText sText sText" "oText tText ."';
+  gridContainer.style.gridTemplateAreas = '"sImage . oImage" "sText sText sText" "oText oText oText"';
 
   ocrContainer.style.gridArea = "oImage";
   carContainer.style.gridArea = "sImage";
-  tbdContainer.style.gridArea = "tImage";
   ocrInfo.style.gridArea = "oText";
   sInfo.style.gridArea = "sText";
   // sInfo.style.color = "white";
@@ -83,7 +77,7 @@ function bootOut() {
   sInfo.style.backgroundColor = "transparent";
   //gridContainer.style.gridTemplateColumns = '"33% 33% 33%"';
   gridContainer.style.gridTemplateRows = '"auto auto"';
-  gridContainer.style.gridTemplateAreas = '"car ocr tbda" "carText ocrText ."';
+  gridContainer.style.gridTemplateAreas = '"car . ocr" "carText ocrText ."';
   carContainer.style.gridArea = "car";
   ocrContainer.style.gridArea = "ocr";
   tbdContainer.style.gridArea = "tbda";

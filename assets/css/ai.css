@@ -134,7 +134,7 @@ figure img {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
-  grid-template-areas: "car ocr tbda";
+  grid-template-areas: "car . ocr";
   grid-column-gap: 5px;
   grid-row-gap: 20px;
   padding: 20px 50px;
@@ -148,9 +148,6 @@ figure img {
   grid-area: ocr;
 }
 
-#tbd {
-  grid-area: tbda;
-}
 
 #apps {
   padding-right: 50px;
