@@ -63,6 +63,12 @@ nav {
   height: 40px;
 }
 
+#resetButton {
+  width: 130px;
+  height: 50px;
+  background: url("../images/resetButton.jpg");
+}
+
 nav a {
   display: inline-block;
   color: white;

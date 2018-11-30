@@ -26,10 +26,11 @@
       <h2>Applications of Artificial Intelligence</h2>
       <div id="apps">
         <p>Click on images for a detailed description.</p>
-        <p>Double click on the images to restore them to their original positions</p>
+        <p>Click on the reset button to bring images back to their original positions</p>
+        <button id="resetButton" type="button" name="" onclick="bootOut()"></button>
       </div>
       <div id="ImageGrid">
-        <div id="selfCarImg" onclick="carBootIn()" ondblclick="bootOut()">
+        <div id="selfCarImg" onclick="carBootIn()">
           <h3>Self Driving Cars</h3>
           <figure>
             <img  id="scI" src="assets/images/autocar.jpeg" alt="Image of an autonomous car">
@@ -39,7 +40,7 @@
 
         </div>
 
-        <div id="ocrImg" onclick="ocrBootIn()" ondblclick="bootOut()">
+        <div id="ocrImg" onclick="ocrBootIn()">
           <h3>Optimal Character Recognition</h3>
           <figure>
             <img  id="ocI" src="assets/images/ocr.png" alt="Image of an autonomous car">
