@@ -153,3 +153,49 @@ figure img {
   padding-right: 50px;
   padding-left: 50px;
 }
+@media screen and (max-width: 1160px) {
+  #ImageGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "car ocr";
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+    padding: 20px 50px;
+  }
+
+  #selfCarImg {
+    grid-area: car;
+  }
+
+  #ocrImg {
+    grid-area: ocr;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  nav {
+    height: auto;
+  }
+  #ImageGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "car" "ocr";
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+    padding: 20px 50px;
+  }
+
+  #selfCarImg {
+    grid-area: car;
+    width: 250px;
+    margin: 10px auto;
+  }
+
+  #ocrImg {
+    grid-area: ocr;
+    width: 250px;
+    margin: 10px auto;
+  }
+}

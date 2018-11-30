@@ -16,14 +16,14 @@ function ocrBootIn() {
 
   ocrInfo.innerHTML = ocrText;
   ocrInfo.style.backgroundColor = "#AC17FF";
-  ocrInfo.style.padding = "30px 100px";
-  ocrInfo.style.paddingRight = "120px";
+  // ocrInfo.style.padding = "30px 100px";
+  // ocrInfo.style.paddingRight = "120px";
   ocrInfo.style.border = '"5px solid #AC17FF"';
   ocrInfo.style.borderRadius = "10px";
 
 
   gridContainer.style.gridTemplateRows = '"auto auto auto"';
-  gridContainer.style.gridTemplateAreas = '"sImage . oImage" "oText oText oText" "sText sText sText"';
+  gridContainer.style.gridTemplateAreas = '". oImage ." "oText oText oText" ". sImage ."';
 
   ocrContainer.style.gridArea = "oImage";
   carContainer.style.gridArea = "sImage";
@@ -45,7 +45,7 @@ function carBootIn() {
 
   sInfo.innerHTML = sText;
   sInfo.style.backgroundColor = "#AC17FF";
-  sInfo.style.padding = "30px 100px";
+  // sInfo.style.padding = "30px 100px";
   sInfo.style.border = '"5px solid #AC17FF"';
   sInfo.style.borderRadius = "10px";
 
@@ -53,14 +53,12 @@ function carBootIn() {
   ocrContainer.style.paddingLeft = "5%";
 
   gridContainer.style.gridTemplateRows = '"auto auto auto"';
-  gridContainer.style.gridTemplateAreas = '"sImage . oImage" "sText sText sText" "oText oText oText"';
+  gridContainer.style.gridTemplateAreas = '". sImage ." "sText sText sText" ". oImage ."';
 
   ocrContainer.style.gridArea = "oImage";
   carContainer.style.gridArea = "sImage";
   ocrInfo.style.gridArea = "oText";
   sInfo.style.gridArea = "sText";
-  // sInfo.style.color = "white";
-  // sInfo.style.backgroundColor = "black";
   sInfo.style.paddingLeft = "20px";
 }
 
@@ -68,19 +66,17 @@ function bootOut() {
   var gridContainer = document.getElementById("ImageGrid");
   var carContainer = document.getElementById("selfCarImg");
   var ocrContainer = document.getElementById("ocrImg");
-  var tbdContainer = document.getElementById("tbd");
   var ocrInfo = document.getElementById("ocrTxt");
   var sInfo = document.getElementById("selfCarTxt");
   ocrInfo.innerHTML = "";
   sInfo.innerHTML = "";
   ocrInfo.style.backgroundColor = "transparent";
   sInfo.style.backgroundColor = "transparent";
-  //gridContainer.style.gridTemplateColumns = '"33% 33% 33%"';
+  gridContainer.style.gridTemplateColumns = '"auto auto"';
   gridContainer.style.gridTemplateRows = '"auto auto"';
-  gridContainer.style.gridTemplateAreas = '"car . ocr" "carText ocrText ."';
+  gridContainer.style.gridTemplateAreas = '"car ocr" "carText ocrText"';
   carContainer.style.gridArea = "car";
   ocrContainer.style.gridArea = "ocr";
-  tbdContainer.style.gridArea = "tbda";
   ocrInfo.style.gridArea = "ocrText";
   sInfo.style.gridArea = "carText";
 }
