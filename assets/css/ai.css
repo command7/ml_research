@@ -110,6 +110,7 @@ figure {
 
 #ocI:hover {
   border: 5px solid black;
+  opacity: 0.5;
 }
 
 #scI {
@@ -118,6 +119,7 @@ figure {
 
 #scI:hover {
   border: 5px solid black;
+  opacity: 0.5;
 }
 
 figure img {
@@ -132,7 +134,7 @@ figure img {
 #ImageGrid {
   /* background-color: #AD1AE8; */
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   grid-template-areas: "car . ocr";
   grid-column-gap: 5px;
@@ -156,7 +158,7 @@ figure img {
 @media screen and (max-width: 1160px) {
   #ImageGrid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     grid-template-areas: "car ocr";
     grid-column-gap: 5px;
