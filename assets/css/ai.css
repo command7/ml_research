@@ -16,6 +16,7 @@ header {
 
 main {
   position: relative;
+  line-height: 40px;
 }
 
 #bgImg {
