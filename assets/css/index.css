@@ -85,3 +85,8 @@ main {
   padding: 40px 50px;
   line-height: 50px;
 }
+
+#indexVideo {
+  width: 420px;
+  margin: 20px auto;
+}
