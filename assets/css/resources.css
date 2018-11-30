@@ -4,8 +4,9 @@
   font-family: 'Exo 2';
 }
 body {
-  padding: 20px;
   line-height: 30px;
+  font-size: 20px;
+  font-weight: 600;
 }
 nav {
   display: block;
@@ -26,4 +27,20 @@ nav a {
 }
 a.currentNav {
   color: yellow;
+}
+
+a:hover {
+  color: red;
+  font-size: 21px;
+}
+
+header {
+  background: url("../images/resourceHeader.jpg");
+  background-size: cover;
+}
+h1 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  color: black;
 }
