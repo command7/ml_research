@@ -63,6 +63,10 @@ a.currentNav {
   color: red;
 }
 
+#homeLink:hover {
+  color: red;
+}
+
 main {
   position: relative;
 }
@@ -96,7 +100,7 @@ main {
     height: auto;
   }
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1160px) {
   nav {
     height: auto;
   }
