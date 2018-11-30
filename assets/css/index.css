@@ -5,7 +5,7 @@
 }
 body {
   /* padding: 20px; */
-  line-height: 30px;
+  line-height: 50px;
   font-weight: 600;
   font-size: 20px;
 }
@@ -79,4 +79,8 @@ main {
  left: 0;
  bottom: 0;
  right: 0;
+}
+
+#indexContent {
+  padding: 40px 50px;
 }
