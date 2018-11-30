@@ -82,3 +82,8 @@ ol, ul {
   bottom: 0;
   right: 0;
 }
+@media screen and (max-width: 970px) {
+  nav {
+    height: auto;
+  }
+}

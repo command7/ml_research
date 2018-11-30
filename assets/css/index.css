@@ -96,3 +96,8 @@ main {
     height: auto;
   }
 }
+@media screen and (max-width: 970px) {
+  nav {
+    height: auto;
+  }
+}
